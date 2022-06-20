@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="flvis" type="vo_repub_rec" name="euroc2file" output="screen">
+        <!--Sub Support Type:-->
+        <!--"TransformStamped"-->
+        <!--"PointStamped"-->
+        <!--"PoseStamped"-->
+        <param name="sub_type" type="string" value="PointStamped" />
+        <param name="sub_topic" type="string" value="/leica/position" />
+        <param name="output_file_path" type="string" value="$(find flvis)/results/euroc_gt.txt" />
+    </node>
+
+    <node pkg="flvis" type="vo_repub_rec" name="vo2file" output="screen">
+      <!--Sub Support Type:-->
+      <!--"TransformStamped"-->
+      <!--"PointStamped"-->
+      <!--"PoseStamped"-->
+      <param name="sub_type" type="string" value="PointStamped" />
+      <param name="sub_topic" type="string" value="/leica/position" />
+      <param name="output_file_path" type="string" value="$(find flvis)/results/euroc_gt.txt" />
+    </node>
+
+
+</launch>
