@@ -26,21 +26,26 @@ static void process(ros::Time stamp, double x, double y, double z,
                     double qw, double qx, double qy, double qz)
 {
     static ros::Time last_time=ros::Time::now();
+
+    cout << "diff time:";
+    cout << (ros::Time::now().toSec())-(last_time.toSec()) << endl;
+    
     if((ros::Time::now().toSec()-last_time.toSec())>0.1)
     {
-        if(enable_output_file)
-        {
-            fd << setprecision(6)
-               << stamp << " "
-               << setprecision(6)
-               << x << " "
-               << y << " "
-               << z << " "
-               << qw << " "
-               << qx << " "
-               << qy << " "
-               << qz << std::endl;
-        }
+      last_time=ros::Time::now();
+      if(enable_output_file)
+      {
+          fd << setprecision(6)
+             << stamp << " "
+             << setprecision(6)
+             << x << " "
+             << y << " "
+             << z << " "
+             << qw << " "
+             << qx << " "
+             << qy << " "
+             << qz << std::endl;
+      }
     }
 }
 

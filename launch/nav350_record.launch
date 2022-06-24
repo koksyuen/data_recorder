@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- record ground truth from SICK NAV350-->
+    <node pkg="data_recorder" type="vo_repub_rec" name="nav3502file" output="screen">
+        <!--Sub Support Type:-->
+        <!--"TransformStamped"-->
+        <!--"PointStamped"-->
+        <!--"PoseStamped"-->
+        <param name="sub_type" type="string" value="Odometry" />
+        <param name="sub_topic" type="string" value="/sick/odom" />
+        <param name="output_file_path" type="string" value="/home/koksyuen/Documents/fyp2/fyp_result/nav350/nav350_gt.txt" />
+    </node>
+
+</launch>
