@@ -1,0 +1,10 @@
+<launch>
+  
+  <include file="$(find mlmapping)/launch/mlmapping_bag_flvis_d435i.launch" />
+
+  <include file="$(find realsense2_camera)/launch/rs_multiple_devices.launch" />
+
+  <include file="$(find orb_slam3_ros_wrapper)launch/orb_slam3_stereo_inertial_d435.launch" />
+
+
+</launch>
