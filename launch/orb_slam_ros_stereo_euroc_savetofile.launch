@@ -8,7 +8,7 @@
         <!--"PoseStamped"-->
         <param name="sub_type" type="string" value="TransformStamped" />
         <param name="sub_topic" type="string" value="/vicon/firefly_sbx/firefly_sbx" />
-        <param name="output_file_path" type="string" value="/home/koksyuen/Documents/fyp2/fyp_result/ros_orbslam3_stereo_euroc/euroc_gt.txt" />
+        <param name="output_file_path" type="string" value="/home/koksyuen/Documents/fyp_result/result/ros_orb_euroc/euroc_gt.txt" />
     </node>
 
     <!-- record the pose estimated by orbslam3 -->
@@ -19,7 +19,7 @@
       <!--"PoseStamped"-->
       <param name="sub_type" type="string" value="PoseStamped" />
       <param name="sub_topic" type="string" value="/orb_slam3_ros/camera" />
-      <param name="output_file_path" type="string" value="/home/koksyuen/Documents/fyp2/fyp_result/ros_orbslam3_stereo_euroc/ros_orbslam3_stereo.txt" />
+      <param name="output_file_path" type="string" value="/home/koksyuen/Documents/fyp_result/result/ros_orb_euroc/ros_orbslam3_stereo.txt" />
     </node>
 
 </launch>
