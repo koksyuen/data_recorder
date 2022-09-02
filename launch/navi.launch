@@ -1,7 +1,7 @@
 <launch>
     <param name ="/use_sim_time" value="true"/>
 
-    <arg name="map_file" default="/home/koksyuen/Documents/fyp_result/mlmapping/map2.yaml"/>
+    <arg name="map_file" default="$(find data_recorder)/config/map2.yaml"/>
 
     <!-- Move Base Package -->
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">

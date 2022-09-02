@@ -1,0 +1,7 @@
+image: /home/koksyuen/Documents/fyp_result/mlmapping/map2.pgm
+resolution: 0.200000
+origin: [-10.900000, -19.500000, 0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
