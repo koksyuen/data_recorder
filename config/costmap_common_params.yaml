@@ -1,6 +1,20 @@
-obstacle_range: 6.0
-raytrace_range: 8.5
+obstacle_range: 3.0
+raytrace_range: 3.5
+
 footprint: [[0.12, 0.18], [0.12, -0.18], [-0.40, -0.18], [-0.40, 0.18]]
-global_frame: orb/map
-robot_base_frame: orb/base_link
-always_send_full_costmap: true
+
+inflation_radius: 0.1
+cost_scaling_factor: 1.5
+
+map_type: costmap
+observation_sources: pointcloud
+pointcloud: {
+      sensor_frame: d435_depth_optical_frame, 
+      data_type: PointCloud2, 
+      topic: /d435/depth/color/points, 
+      marking: true, 
+      clearing: true, 
+      min_obstacle_height: 0.1, 
+      max_obstacle_height: 3.0, 
+      obstacle_range: 6.0, 
+      raytrace_range: 8.5}

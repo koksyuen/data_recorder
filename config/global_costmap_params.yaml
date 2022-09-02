@@ -1,20 +1,10 @@
 global_costmap:
-  update_frequency: 2.5
-  publish_frequency: 2.5
+  global_frame: orb/map
+  robot_base_frame: orb/base_link
+
+  update_frequency: 10.0
+  publish_frequency: 10.0
   transform_tolerance: 0.5
-  width: 15
-  height: 15
-  origin_x: -7.5
-  origin_y: -7.5
-  rolling_window: true
-  # inflation_radius: 0.6
-  resolution: 0.1
-  plugins:
-    - {name: global_inflation_layer,        type: "costmap_2d::InflationLayer"}
-    - {name: static_layer,        type: "costmap_2d::StaticLayer"}
-  static_layer:
-    map_topic: /map
-    subscribe_to_updates: true
-  global_inflation_layer:
-    inflation radius: 1.75
-    cost scaling factor: 2.58
+
+  static_map: true
+ 
