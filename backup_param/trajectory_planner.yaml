@@ -1,6 +1,8 @@
+# recovery_behavior_enabled: false
+
 TrajectoryPlannerROS:
-  max_vel_x: 0.15
-  min_vel_x: 0.1
+  max_vel_x: 0.3
+  min_vel_x: 0.2
   max_vel_theta: 0.25
   min_vel_theta: -0.25
   min_in_place_vel_theta: 0.2

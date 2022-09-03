@@ -1,4 +1,4 @@
-image: /home/koksyuen/Documents/fyp_result/mlmapping/map2.pgm
+image: /home/koksyuen/fyp_ws/src/data_recorder/config/map2.pgm
 resolution: 0.200000
 origin: [-10.900000, -19.500000, 0]
 negate: 0

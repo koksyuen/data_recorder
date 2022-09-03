@@ -10,11 +10,11 @@ global_costmap:
   # inflation_radius: 0.6
   resolution: 0.1
   plugins:
-    - {name: global_inflation_layer,        type: "costmap_2d::InflationLayer"}
+    # - {name: global_inflation_layer,        type: "costmap_2d::InflationLayer"}
     - {name: static_layer,        type: "costmap_2d::StaticLayer"}
   static_layer:
     map_topic: /map
     subscribe_to_updates: true
-  global_inflation_layer:
-    inflation radius: 1.75
-    cost scaling factor: 2.58
+  # global_inflation_layer:
+  #   inflation radius: 1.75
+  #   cost scaling factor: 2.58
